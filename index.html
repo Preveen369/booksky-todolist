@@ -18,10 +18,7 @@
 
     <div class="container">
         <div class="book-container">
-            <h2>Rich Dad Poor Dad</h2>
-            <h5>Robert</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis nostrum magni dolores facere blanditiis omnis quo amet, eius repellendus ratione possimus odio voluptatibus. Ad officia eaque fuga. Quia, accusamus!</p>
-            <button onclick="deletebook(event)">Delete</button>
+            <!--handled by script.js file-->
         </div>
     </div>
 
@@ -37,9 +34,29 @@
         </form>
     </div>
     
+    <div class="popup-box edit-popup-box">
+        <h2>Edit Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="edit-book-title-input">
+            <input type="text" placeholder="Book Author" id="edit-book-author-input">
+            <textarea placeholder="Short Description" id="edit-book-description-input"></textarea>
+            <button id="save-edit-book">SAVE</button>
+            <button id="cancel-edit-popup">CANCEL</button>
+        </form>
+    </div>
+
+    <div class="popup-box view-popup-box">
+        <h2>View Book</h2>
+        <div>
+            <h3 id="view-book-title"></h3>
+            <h5 id="view-book-author"></h5>
+            <p id="view-book-description"></p>
+        </div>
+        <button id="close-view-popup">CLOSE</button>
+    </div>
 
     <button class="add-button" id="add-popup-button">+</button>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>

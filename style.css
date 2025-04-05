@@ -29,12 +29,12 @@ body {
     vertical-align: top;
 }
 
-.book-container h2{
-    color:#fd6569;
+.book-container h2 {
+    color: #fd6569;
 }
 
-.book-container button{
-    background-color:#fd6569;
+.book-container button {
+    background-color: #fd6569;
     color: black;
     border-radius: 10px;
     padding-top: 5px;
@@ -45,88 +45,194 @@ body {
     margin-top: 10px;
 }
 
-.add-button{
-    background-color:#fd6569;
-    color:black;
-    border-radius:100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 40px; 
-    border:none;
+.add-button {
+    background-color: #fd6569;
+    color: black;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    border: none;
     position: fixed;
-    bottom:30px;
+    bottom: 30px;
     right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.popup-overlay{
+.popup-overlay {
     background-color: black;
     opacity: 0.8;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
-    top:0;
-    left:0;
-    z-index:1;
+    top: 0;
+    left: 0;
+    z-index: 1;
     display: none;
 }
 
-.popup-box{
+.popup-box {
     background-color: #fd6569;
-    width:40%;
-    padding:40px;
-    border-radius:10px;
-    position:absolute;
-    top:20%;
-    left:30%;
-    z-index:2;
+    width: 40%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
     display: none;
 }
 
-
-.popup-box input{
+.popup-box input,
+.popup-box textarea {
     background-color: transparent;
-    border:none;
-    width:100%;
-    margin: 5px;
-    padding:5px;
+    border: none;
+    width: calc(100% - 20px);
+    margin: 5px 10px 5px 0;
+    padding: 5px;
     font-size: 20px;
     border-bottom: solid black 2px;
 }
 
-.popup-box textarea{
+.popup-box textarea {
     background-color: transparent;
-    width:100%;
-    margin: 5px;
-    padding:5px;
-    font-size: 20px;
     border: solid black 2px;
+    width: calc(100% - 20px);
+    margin: 5px 10px 5px 0;
+    padding: 5px;
+    font-size: 20px;
+    resize: vertical;
+    max-height: 150px;
+    overflow-y: auto;
 }
 
-.popup-box input::placeholder{
-    color: black
+.popup-box input::placeholder {
+    color: black;
 }
 
-.popup-box textarea::placeholder{
-    color: black
+.popup-box textarea::placeholder {
+    color: black;
 }
 
-.popup-box button{
+.popup-box button {
     background-color: black;
     padding-left: 20px;
     padding-right: 20px;
     border: none;
-    padding-top:10px;
-    padding-bottom:10px;
-    color:white;
-    margin:5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    margin: 5px 10px 5px 0;
 }
 
-.popup-box input:focus{
+.popup-box input:focus {
     outline: none;
 }
 
-.popup-box textarea:focus{
+.popup-box textarea:focus {
     outline: none;
+}
+
+.view-popup-box #close-view-popup {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1200px) {
+    .book-container {
+        width: 45%;
+    }
+
+    .popup-box {
+        width: 50%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 28px;
+    }
+
+    .book-container {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .popup-box {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .add-button {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .popup-box input,
+    .popup-box textarea {
+        font-size: 18px;
+    }
+
+    .popup-box button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .popup-box textarea {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 24px;
+    }
+
+    .book-container {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .popup-box {
+        width: 90%;
+        padding: 15px;
+        left: 5%;
+    }
+
+    .add-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .popup-box input,
+    .popup-box textarea {
+        font-size: 16px;
+    }
+
+    .popup-box button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .view-popup-box #close-view-popup {
+        font-size: 14px;
+    }
+
+    .popup-box textarea {
+        font-size: 16px;
+    }
 }
