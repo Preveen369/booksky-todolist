@@ -7,6 +7,8 @@
 
 **Booksky-todolist** is a static web application designed for managing a personal book collection, built using HTML, CSS, and JavaScript. It integrates with Firebase Firestore to store and retrieve book details such as titles, authors, and descriptions. Hosted on Firebase, the app offers a clean and intuitive interface for users to organize their reading lists easily and efficiently.
 
+🔗 **Project Demo**: <https://booksky-todolist.firebaseapp.com/>
+
 ---
 
 ## 🚀 Features
@@ -64,7 +66,7 @@ Booksky-todolist/
    - Initialize Firebase: `firebase init`
    - Deploy: `firebase deploy`
 
-🌐 Access your app live at: https://booksky-todolist.firebaseapp.com/
+🌐 Access your app live at: <https://booksky-todolist.firebaseapp.com/>
 
 ---
 
