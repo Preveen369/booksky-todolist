@@ -1,8 +1,8 @@
 # 📚 Booksky-todolist – A Book Management Web App
 
-![Platform](https://img.shields.io/badge/Platform-Web-blue.svg)  
-![Tech](https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS-orange.svg)  
-![Language](https://img.shields.io/badge/Language-JavaScript-yellow.svg)  
+![Platform](https://img.shields.io/badge/Platform-Web-blue.svg)
+![Tech](https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS-orange.svg)
+![Language](https://img.shields.io/badge/Language-JavaScript-yellow.svg)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
 **Booksky-todolist** is a static web application designed for managing a personal book collection, built using HTML, CSS, and JavaScript. It integrates with Firebase Firestore to store and retrieve book details such as titles, authors, and descriptions. Hosted on Firebase, the app offers a clean and intuitive interface for users to organize their reading lists efficiently.
@@ -58,11 +58,11 @@ Booksky-todolist/
 
 ## 🧪 Installation & Setup
 
-### Prerequisites
+### 📋 Prerequisites
 - A modern web browser (e.g., Chrome, Firefox)  
 - Firebase CLI (optional, for deployment)
 
-### Steps
+### 🧑‍💻 Steps
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Preveen369/booksky-todolist.git
