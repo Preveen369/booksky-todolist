@@ -19,18 +19,6 @@
 - Displays a list of books with key details like title, author, and description.  
 - Allows users to view, edit, or delete book entries.
 
-### ℹ️ About & Contact Pages
-- Includes information about the app and its creator.  
-- Offers a contact form for feedback or inquiries.
-
-### ✅ To-Do List Integration
-- Enables users to mark books as "to-read" or "completed."  
-- Tracks reading progress with a simple checklist.
-
-### 🌟 Highlighted Feature
-- Features a "Book of the Day" section to recommend books.  
-- Emphasizes user engagement with curated content.
-
 ---
 
 ## 🛠️ Tech Stack
